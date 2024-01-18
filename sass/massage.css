@@ -1,0 +1,159 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+background-color: #080808;
+
+}
+
+.w3-bar{
+  background-color: #080808 !important;
+}
+
+
+
+ .w3-bar-item{
+  margin: 10px;
+    border-radius: 20%;
+    border: 0px;
+   
+
+}
+.w3-bar-item:hover{
+  margin-bottom: 7px;
+  border-bottom: 3px solid burlywood;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: black;
+ 
+}
+
+#svg-wrapper{
+  position: fixed;
+  bottom:10px;
+  right:10px;
+  height: auto;
+}
+ 
+img:hover{
+      width: 56px;
+      transition: width .1s;
+      -webkit-transition: width .1s; /* Safari */
+      border: 3px solid ;
+  }
+
+
+.toggle-animation{
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align:center;
+  font-family:helvetica;
+}
+
+
+
+
+.toggle{
+  position: fixed;
+  bottom: 250px;
+  left: 20px;
+  height: -10px;
+  width: 60px;
+}
+.social{
+  width: 10px;
+  line-height: 35px;
+  left: 100px;
+}
+.social i{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #909090;
+  border-left: 40px;
+  margin-left: 8px;
+}
+
+.fa-home:hover{
+  color: rgb(255, 0, 0);
+}
+.fa-search:hover{
+  color: rgb(241, 242, 242);
+}
+
+.fa-envelope:hover{
+  color: rgb(0, 255, 68);
+}
+.fa-info-circle:hover{
+  color: aqua;
+}
+
+
+
+.fa-facebook:hover{
+  color: blue;
+}
+.fa-twitter:hover{
+  color: #55acee;
+}
+.fa-youtube:hover{
+  color: #dc4e41;
+}
+
+
+.landing{
+  animation: mymove 11s infinite;
+}
+.id{
+  animation-timing-function:ease-in ;
+}
+@keyframes mymove {
+  0%{
+    left: 0px; 
+    opacity: 0;
+  }50%
+  {
+    left: 400px;
+   opacity: 0.6;
+  }
+  100%{
+    left:800px;
+    opacity: 1;
+  }
+  
+}
+.animate-charcter {
+  position: relative;
+  top: 100px;
+  left: 3px;
+  text-transform: uppercase;
+  background-image: linear-gradient( -225deg, #f9f8fd 0%, #12107a 29%, #8a8686 67%, #080808 100% );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+  display: inline-block;
+  font-size: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.custom-alert{
+  padding: 5px 10px;
+}
